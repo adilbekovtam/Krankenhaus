@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    height: 100vh;
+    background-image: url("hospi.jpg");
+    background-size: 150% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.profile{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    background-image: url("profile.png");
+    background-position:center ;
+    margin: 0 auto;
+    border-radius: 360px;
+    margin-top: auto;
+}
+.profile_info{
+    height: 25vh;
+    margin: 0 auto;
+    text-align: center;
+    background-color: gainsboro ;
+    width: 100%;
+}
+.left{
+    width: 60%;
+}
+.right{
+    width: 30%;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+.content-box{
+    background-color: #caffe0;
+    width: 100%;
+    margin: 25px 0 0 0;
+    border-radius: 20px;
+}
+.content-box img{
+    max-width: 700px;
+    max-height: 400px;
+    padding: 10px 0 0 10px;
+}
+.content-box h1{
+   padding: 10px 0 0 10px;
+}
+.content-box p{
+    padding: 10px 0 0 10px;
+}
+.content-box div{
+    text-align: right;
+    font-style: italic;
+    margin-right: 9px;
+}
+.nav-menu{
+    list-style-type: none;
+    padding: 10px ;
+
+}
+.nav-menu li a{
+    text-decoration: none;
+}
+.nav-menu li a:visited{
+    color: black;
+}
+.nav-menu li a:active{
+    color: black;
+}
+.nav-menu li{
+    display: block;
+    padding: 20px;
+    transition: 0.8s;
+}
+.nav-menu li:hover{
+    background-color: #a3cfb5 ;
+    border-radius:20px ;
+}
+hr{
+    margin: 20px 0;
+}
+.container2{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+.logo{
+    background-color: #caffe0;
+}
+.history p{
+    margin: 15px 0;
+}
+
+#n9 p{
+    margin: 15px 0;
+    
+}
+.history img{
+    max-width: 90%;
+}
+.donate{
+    border: none;
+    background-color: #ffffff ;
+    margin: 15px;
+    padding: 15px;
+    font-weight: bold;
+    transition: 1s;
+    
+}
+.donate:hover{
+    color: white;
+    padding: 25px 30px;
+    background: linear-gradient(blue,pink,yellow);  
+}
+.nav-btn{
+    display: none;
+    font-size: 36px;
+    width: 100%;
+    height: 50px;
+    background-color: #a3cfb5 ;
+    text-align: center;
+}
+.mobile{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    top: 0;
+}
+.list a{
+    color: black;
+    text-decoration: none;
+}
+.list{
+    margin: 10px 0;
+    width: 150px;
+    background: #a3cfb5;
+    border-radius: 35px;
+    padding: 2px 15px;
+    text-align: center;
+}
+.close-btn{
+    border: none;
+    background: none;
+    font-size: 36px;    
+    color: white;
+    
+}
+.up{
+    border: none;
+    background: none;
+    position: fixed;
+    top: 85%;
+    left: 96%;
+    font-size: 36px;
+}
+.Top{
+    background: #caffe0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    width: 100% ;
+    margin: 0 auto;
+
+}
+.Center{
+    background-color:#a3cfb5;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+.Down{
+    background-color:#90caa8;
+    text-align: center;
+    padding: 50px;
+    
+}
+.footer-menu{
+    list-style-type: none;
+    padding: 10px ;    
+}
+.footer-menu li{
+    padding: 5px 4px;
+}
+.top-content{
+    padding: 10px 4px; 
+    font-size: 80%;
+    width: 45%;
+}
+
+.doctor{
+    background: #90caa8;
+    border: none;
+    width: 100%;
+    height: 150px;
+    margin-top: 25px ;
+    border-radius: 20px;
+    font-size: 40px;
+    color: #ffffff;
+}
+.priem{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+}
+.priem-left{
+    width: 40%;
+    height: 70%;
+    background-color: white;
+}
+.priem-right{
+    width: 40%;
+    height: 70%;
+    background-color:#a3cfb5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.doctor:hover{
+    background: #699e7f;
+    color: #b3b3b3;
+    transition: 0.5s;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+input{
+    width: 100%;
+    border-radius: 50px;
+    padding: 5px 5px;
+    font-size: large;
+}
+.close-form{
+    border: none;
+    background: none;
+    font-size: 36px;
+    position: absolute;
+    top: 0;    
+    right: 0;    
+}
+#Arzt option{
+    width: 100%;
+}
+@media(max-width:1200px){
+    .content-box img{
+        max-width: 90%;
+    }
+}
+@media(max-width:1025px){
+    .right{
+        display: none;
+    }
+    .nav-btn{
+        display: block;
+    }
+    .left{
+        width: 90%;
+    }
+    .container{
+        justify-content: center;
+        width: 100%;
+    }
+    
+}
+@media(max-width:768px){
+    .history{
+        height: 50vh;
+        overflow:scroll;
+    }
+    .header{
+        background-size:cover;
+        background-position: center;
+    }
+    .priem-left{
+        display: none;
+
+    }
+    .priem-right{
+        width: 80%;
+        border-radius: 100% ;
+    }
+    
+}

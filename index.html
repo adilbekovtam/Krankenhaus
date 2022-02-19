@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>St.Vincenz_KrankenhausBlog</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        
+    </head>
+    <body>
+        <div class="nav-btn" onclick="openNav()">≡</div>
+        <div class="mobile" id="moba">
+                <button class="close-btn" onclick="close_nav()">✖</button>
+                <div class="list"><a href="#6" onclick="close_nav()">jüngste Tragödie</a></div>
+                <div class="list"><a href="#5" onclick="close_nav()">Covid-19-Infektionen</a></div>
+                <div class="list"><a href="#4" onclick="close_nav()">Geburtshilfe</a></div>
+                <div class="list"><a href="#3" onclick="close_nav()">Abschied vom Chefarzt</a></div>
+                <div class="list"><a href="#2" onclick="close_nav()">Geburtstag unseres Krankenhauses</a></div>
+                <div class="list"><a href="#1" onclick="close_nav()">Weihnachten</a></div>
+                <div class="list"><a href="#7" onclick="close_nav()">Blogs</a></div>
+                <div class="list"><a href="#8" onclick="close_nav()">About us</a></div>
+                <div class="list"><a href="#n9" onclick="close_nav()">Donate us</a></div>
+                <div class="list"><a onclick="doc_btn()">Arzttermin</a></div>
+        </div>
+        <button class="up" onclick="upScroll()" id="upbtn">⤊</button>
+        
+        <header>
+            <div class="header">
+                <div class="profile"></div>
+                <div class="profile_info">
+                    <h1>St.Vincenz KrankenhausBlog</h1>
+                    <p>Im Herzen Paderborns in unmittelbarer Nähe zum Dom und zur Fußgängerzone gelegen, ist das St. Vincenz-Krankenhaus seit über 100 Jahren für die moderne und von christlichen Werten geleitete Behandlung von Patienten bekannt. Träger sind die Barmherzigen Schwestern des Heiligen Vincenz von Paul. Das Akademische Lehrkrankenhaus der Universität Göttingen genießt bei Patienten aus der gesamten Region des Paderborner Landes einen exzellenten Ruf.</p>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+                <div class="left" id="7">
+                    <div class="content-box" id="6">
+                        <h1>jüngste Tragödie</h1>
+                        <p>Die jüngste Explosion forderte viele unserer Mitarbeiter und Patienten. Bringen wir sie zu Ende.</p>
+                        <img src="цветок.jpg">
+                        <div>data: 30.01.2022</div>
+                    </div>
+                    <div class="content-box" id="5">
+                        <h1>Zunehmende Fälle von Covid-19-Infektionen</h1>
+                        <p>Am vergangenen Tag hat sich die Zahl der Infizierten um das Dreifache erhöht.</p>
+                        <img src="lol.jpg">
+                        <div>data: 27.01.2022</div>
+                    </div>
+                    <div class="content-box" id="4">
+                        <h1>St. Vincenz-Geburtshilfe ist die größte in NRW</h1>
+                        <p>Zum Jahresabschluss kamen Drillinge ohne Kaiserschnitt gesund zur Welt</p>
+                        <img src="coka.jfif">
+                        <div>data: 25.01.2022</div>
+                    </div> 
+                    <div class="content-box" id="3">
+                        <h1>Abschied vom Chefarzt</h1>
+                        <p>Wir werden Sie vermissen, Mr. Robinson. Wir wünschen Ihnen alles Gute und eine gute Rente</p>
+                        <img src="doc.jpeg">
+                        <div>data: 23.01.2022</div>
+                    </div>
+                    <div class="content-box" id="2">
+                        <h1>30. Geburtstag unseres Krankenhauses</h1>
+                        <p>Dies ist ein einzigartiger Tag, den Sie nicht verpassen sollten. Anlässlich des Jubiläums des Krankenhauses sollte man Gesundheit und Freude wünschen</p>
+                        <img src="tort.jpg">
+                        <div>data: 05.01.2022</div>
+                    </div>
+                    <div class="content-box" id="1">
+                        <h1>Weihnachten</h1>
+                        <p>Frohes neues Jahr für Sie. Wir wünschen Ihnen ein gutes und gesundes Leben.</p>
+                        <img src="baby.jpg">
+                        <div>data: 31.12.2021</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="content-box">
+                        <ul class="nav-menu">
+                            <h2>Blogs</h2>
+                            <li><a href="#6">jüngste Tragödie</a></li>
+                            <li><a href="#5">Covid-19-Infektionen</a></li>
+                            <li><a href="#4">Geburtshilfe</a></li>
+                            <li><a href="#3">Abschied vom Chefarzt</a></li>
+                            <li><a href="#2">Geburtstag unseres Krankenhauses</a></li>
+                            <li><a href="#1">Weihnachten</a></li>
+                        </ul>
+                    </div>
+                    <div class="content-box">
+                        <ul class="nav-menu">
+                            <li><a href="#7">Blogs</a></li>
+                            <li><a href="#8">About us</a></li>
+                            <li><a href="#n9">Donate us</a></li>
+                        </ul>
+                    </div>
+                    <button class="doctor" onclick="doc_btn()" id="docs">Arzttermin</button>
+                </div>
+            </div>
+            <div class="priem" id="priemlog">
+                <div class="priem-left">
+
+                </div>
+                <div class="priem-right">
+                    <h2>Arzttermin</h2>
+                    <form action="index.html">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname">
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname">
+                        <label for="number">number:</label>
+                        <input type="tel"placeholder="+7(___)___-__-__">
+                        <label for="lname">Arzt:</label>
+                        <select id="Arzt">
+                            <option value="der Chirurg">der Chirurg </option>
+                            <option value="der Internist">der Internist</option>
+                            <option value="der Augenartz">der Augenartz </option>
+                            <option value="der Nervenartz">der Nervenartz</option>
+                            <option value="der Zahnartz">der Zahnartz</option>
+                            <option value="der Kinderartz">der Kinderartz</option>
+                        </select>
+                        <input type="submit" value="submit">
+                    </form>
+                    <button class="close-form" onclick="document.getElementById('priemlog').style.display='none'">✖</button>
+                </div>
+            </div>
+            <hr>
+            <div class="container2" id="8">
+                <div class="logo">
+                    <h1>ÜBER UNS</h1>
+                    <h1>Herzlich willkommen im St. Vincenz-Krankenhaus Paderborn</h1>
+                </div>
+                <div class="history">
+                    <p>Unser Krankenhaus
+                    Im Herzen Paderborns in unmittelbarer Nähe zum Dom und zur Fußgängerzone gelegen, ist das St. Vincenz-Krankenhaus seit über 100 Jahren für die moderne und von christlichen Werten geleitete Behandlung von Patienten bekannt. Träger sind die Barmherzigen Schwestern des Heiligen Vincenz von Paul. Das Akademische Lehrkrankenhaus der Universität Göttingen genießt bei Patienten aus der gesamten Region des Paderborner Landes einen exzellenten Ruf.
+                
+                    1901 gegründet, verfügt das St. Vincenz-Krankenhaus heute über 434 Betten in den Fachabteilungen für Innere Medizin/ Gastroenterologie, Onkologie und Nephrologie, Gefäßchirurgie, Neurologie, Kardiologie/ Internistische Intensivmedizin, Orthopädie/Unfallchirurgie/Sporttraumatologie, Allgemein- und Visceralchirurgie. An die Kliniken angegliedert sind ein Ambulantes OP-Zentrum sowie zertifiziertes Darmzentrum, Endoprothetikzentrum, MS-Zentrum und die Stroke Unit für Schlaganfallspatienten. Radiologie und Anästhesiologie ergänzen zudem das Spektrum. Jährlich behandeln wir im St. Vincenz-Krankenhaus rund 23.000 Patienten stationär.
+                
+                    Besonderen Komfort ermöglicht die neu eingerichtete Wahlleistungsstation mit ihren geräumigen, elegant ausgestatteten Ein- und Zweibettzimmern. Die Station kombiniert qualitativ hochwertige Medizin und zugewandte Pflege mit besonderer Ausstattung und Premium-Dienstleistungen.
+                
+                    Das geschäftige Treiben Paderborns können alle Patienten von der modern eingerichteten Cafeteria des Hauses aus in Ruhe beobachten: Die von zwei Seiten komplett verglaste Cafeteria ist zudem mit freiem WLAN ausgestattet.</p>
+                    <hr>
+                    <img src="old.png">
+                    <hr>
+                    <h2>Krankenhaus-Historie<br>
+                        Über einhundert Jahre Dienst am Menschen</h2>
+                    <p>Das Paderborner St. Vincenz-Krankenhaus hat seine Wurzeln seit mehr als einhundert Jahren in der „Kongregation der Barmherzigen Schwestern vom Hl. Vincenz von Paul zu Paderborn“. Als die ersten Barmherzigen Schwestern im März 1841 nach Paderborn kamen, wurde Ihnen zunächst das heutige Landeshospital zugleich Mutter- und Krankenhaus. Schon wenige Jahre später machte die stetig wachsende Zahl an Schwestern den Neubau eines Mutterhauses „Am Busdorf“ erforderlich, das am 12. September 1857 eingeweiht wurde. </p>
+                    <p>Mit der Zeit wurde klar, dass auch ein neues Krankenhaus gebraucht wurde, denn nicht nur die räumliche Enge bereitete im Landeshospital Probleme, sondern auch die Kapazitäten im Bereich der pflegerischen Ausbildung der Schwestern. Bis die Standortfrage für das neue Krankenhaus gelöst war, sollte es jedoch einige Jahre dauern. Am Ostermontag 1900 überbrachte Bürgermeister Otto Plassmann schließlich persönlich den Bewilligungsbescheid für den Bau des neuen Krankenhauses „Am Busdorf“. Schon im Oktober 1901 weihte Bischof Dr. Wilhelm Schneider das neue Krankenhaus zwischen Kasseler Straße und Busdorfwall ein. Die Zeitgenossen waren sich einig: Paderborn konnte sich glücklich schätzen, ein derart modernes Krankenhaus erhalten zu haben, das den neuesten Anforderungen der Zeit genügte.</p>
+                    <p>Durch das neue Mutterhaus und das neue Krankenhaus verbesserte sich die Situation für die Schwestern deutlich. Dies machte sich auch in der Pflegeausbildung bemerkbar, die bei den Vincentinerinnen seit jeher eine große Tradition besaß. Als eine der ersten Krankenpflegeschulen in Deutschland war die Ausbildungsstätte am St. Vincenz-Krankenhaus 1908 staatlich anerkannt worden.</p>
+                    <p>Die Kapazität des St. Vincenz-Krankenhauses war bis zum Jahr 1939 durch An- und Umbauten von ursprünglich 100 auf 300 Betten gestiegen. Doch mit dem Ausbruch des Zweiten Weltkriegs begann eine dunkle Zeit für das St. Vincenz-Krankenhaus, das wie im Ersten Weltkrieg als Lazarett diente. Als die Front näher rückte, flohen Schwestern und Patienten in die Dörfer rund um Paderborn. Am 24. März 1945 wurde das Krankenhaus von zahlreichen Brandbomben getroffen und brannte fast völlig aus. Der Wiederaufbau des Hauses, mit dem die Schwestern sofort nach dem Kriegsende begannen, gestaltete sich schwierig und langwierig. Erst 1948 war das Haupthaus mit 100 Betten wieder instand gesetzt.</p>
+                    <p>In den folgenden Jahren bewegte sich einiges: Bis Mitte der 1950er Jahre stieg die Kapazität des Hauses wieder auf 240 Betten an. 1952 bis 1954 kam ein neuer Trakt mit 150 Betten hinzu, 1954 wurde eine Schule für Kinderkrankenpflege gegründet. Auf dem weitläufigen Gelände zwischen Busdorfwall und Kasseler Straße entstand 1962 ein Neubau für die Pflegevorschule, 1966 bis 1968 folgte der Bau eines Wohnheims für 100 Schülerinnen.</p>
+                    <p>Das St. Vincenz-Krankenhaus in der Innenstadt entwickelte sich kontinuierlich: In zwei Baustufen wurde das Krankenhaus bis ins Jahr 2000 saniert und erweitert, erhielt neue Pflegestationen und eine neue Intensivstation, aber auch eine Tiefgarage für Besucher. Im Zuge der neuesten Baumaßnahme entstand zwischen 2010 und 2013 für 23 Millionen Euro ein Erweiterungsbau, der u.a. die Klinik für Neurologie mit allen Funktionsbereichen und Stationen aufnimmt. Durch den Umzug der Neurologie aus dem Landeshospital in das „Haus 1“ konnte die Versorgung in der Neurologie deutlich optimiert und der Komfort für die Patienten verbessert werden. Das Krankenhaus verfügt am Standort „Am Busdorf“ dann über knapp 500 Betten. Neu dazugekommen sind 104 Zimmer mit 186 Betten, eine Wahlleistungsstation, eine Intermediate-Care-Station und eine Infektionsstation. Grundsätzlich rüstet das St. Vincenz mit dem Neubau auch in Sachen Hygiene auf: Die neuen Stationen bieten mehr Möglichkeiten zum sicheren Isolieren von Patienten mit ansteckenden Krankheiten und Keimen. Neben den medizinischen Aspekten beinhaltet der Erweiterungsbau zusätzliche 150 Parkplätze für Besucher in der Tiefgarage.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="container2" id="n9">
+                    <div class="logo">
+                        <h1>Das Universitätsklinikum St. Vincent's Hospital Paderborn wurde bei den massiven Terroranschlägen schwer beschädigt</h1>
+                        <button class="donate">DONATE NOW</button>
+                    </div>
+                    <p>Liebe Freunde,<br>
+                        Das Universitätsklinikum St. Vincent's Hospital Paderborn wurde bei den massiven Terroranschlägen schwer beschädigt. Nach einer kürzlichen verheerenden Explosion wurde das Krankenhaus außer Betrieb gesetzt und 130 stationäre Patienten mussten aus den Stockwerken in die Notaufnahme (ER) und dann in ihre Häuser oder andere Krankenhäuser evakuiert werden. Das 300-Betten-Krankenhaus, das schon immer eine qualitativ hochwertige Versorgung geboten hat, ist plötzlich zu einem Feldlazarett geworden, das die am Boden liegenden Verletzten mit allen verfügbaren Mitteln, einschließlich der einfachsten wie Mobiltelefonen, in Notfällen versorgt. Der niederschmetternde Verlust traf das Herz des Krankenhauses St. Vincent Paderborn. Fünf unserer geliebten Krankenschwestern starben, während sie ihre Arbeit fortsetzten. Außerdem starben 15 Patienten und zwei Besucher.</p>
+                    <p>Um unsere Mission, unserer Gemeinde hervorragende Gesundheitsdienste zu bieten, wieder aufzunehmen, ist viel Arbeit auf verschiedenen Ebenen des Krankenhauses erforderlich, und die Kosten für diese Rehabilitation werden auf mehr als 30 Millionen DM geschätzt.</p>
+                    <p>Ihre Gebete und Ihre Unterstützung werden sehr geschätzt. Wir hoffen aufrichtig, dass Sie uns helfen können, diese sehr gute Sache zu verwirklichen!</p>
+            </div>    
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="Top">
+                    <div class="top-content">
+                        <h3>St. Josefs-Krankenhaus Salzkotten</h3>
+                        <p>Am Rande der sympathischen Kleinstadt Salzkotten gelegen, ist das St. Josefs-Krankenhaus von je her für qualitativ hochwertige Medizin und empathische Zuwendung zu seinen Patienten bekannt.</p>
+                    </div>
+                    <div class="top-content">
+                        <h3>Frauen- und Kinderklinik St. Louise</h3>
+                        <p>In zentraler Lage zwischen Innenstadt und Südringcenter, ist die Frauen- und Kinderklinik St. Louise von jeher spezialisiert auf Gynäkologie und Geburtshilfe - dazu kommt die Kinder- und Jugendmedizin. Das Akademische Lehrkrankenhaus der Universität Göttingen behandelt Patienten aus der gesamten Region des Paderborner Landes.</p>
+                    </div>
+                </div>
+                <div class="Center">
+                        <ul class="footer-menu">
+                            <li>Über uns</li>                                
+                            <li>Impressum</li>                                
+                            <li>Datenschutzerklärung</li>                                
+                            <li>Unser Krankenhaus</li>
+                            <li> Geschäftsführung</li>
+                            <li> Patientenzufriedenheit</li>
+                            <li>Hygiene</li>
+                            <li>Patientensicherheit</li>
+                            <li>Anfahrt/Kontakt</li>
+                        </ul>
+                        <ul class="footer-menu">
+                        	<li>Allgemein- und Visceralchirurgie</li>
+                            <li>Anästhesiologie</li>
+                            <li>Gefäßchirurgie</li>
+                            <li>Medizinische Klinik I</li>
+                            <li>Medizinische Klinik II</li>
+                            <li>Neurologie</li>
+                            <li>Orthopädie</li>
+                            <li>Radiologie</li>
+                            <li>Notarzt</li>
+                            <li>Mund- und Kieferchirurgie</li>
+                            <li>Ambulantes OP-Zentrum</li>
+                            <li>Darmzentrum</li>
+                            <li>EndoProthetikZentrum</li>
+                            <li>Multiple Sklerose</li>
+                            <li>Stroke unit</li>
+                        </ul>
+                        <ul class="footer-menu">
+                            <li>Aktuelles & Termine</li>
+                            <li>Aktuelles & Presse</li>
+                            <li>Termine & Veranstaltungen</li>
+                            <li>Klinikmagazin Visite</li>
+                            <li>Mediathek</li>
+                            <li>Kunst im Krankenhaus</li>
+                        </ul>
+                </div>
+                <div class="Down">
+                    <h3>© 2022 St. Vincenz-Krankenhaus GmbH</h3>
+                </div>
+            </div>
+        </footer>
+        <script src="js.js"></script>
+    </body>
+</html>
